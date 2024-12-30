@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.example.memeFollowerPlugin</id>
+    <name>Meme Follower</name>
+    <version>1.0</version>
+    <vendor email="you@example.com" url="https://yourwebsite.com">Your Name</vendor>
+    <description>Shows a meme image that follows the cursor in a JFrame when hovered over the window.</description>
+
+    <!-- Dependencies -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Register the action -->
+    <actions>
+        <action
+                id="MemeFollowerAction"
+                class="com.example.myplugin.MemeFollowerAction"
+                text="Show Meme Follower"
+                description="Shows meme when cursor enters the window">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
